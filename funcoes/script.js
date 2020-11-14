@@ -69,7 +69,7 @@ console.log(imc2(80, 1.97)); // undefined
 
 function terceiraIdade(idade) {
   if (typeof idade !== 'number') {
-    return 'Informe a sua idade!';
+    return 'Por favor, entre com um número';
   } else if (idade >= 60) {
     return true;
   } else {
@@ -78,3 +78,9 @@ function terceiraIdade(idade) {
 }
 // Não é uma boa prática retornar diferentes tipos de valores. Nesse caso tem string e boolean.
 console.log(terceiraIdade(59));
+
+function faltaVisitar(paisesVisitados) {
+  var totalPaises = 193;
+  var total = totalPaises - paisesVisitados;
+  return `Faltam visitar ${total} países`;
+}
