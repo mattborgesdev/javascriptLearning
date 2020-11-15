@@ -84,3 +84,79 @@ function faltaVisitar(paisesVisitados) {
   var total = totalPaises - paisesVisitados;
   return `Faltam visitar ${total} países`;
 }
+
+// Exercíciozinhos
+
+// Construir uma função para verificar se é truthy
+
+/*
+
+function verificaTruthy(valor) {
+  if (typeof valor !== true) {
+    console.log('O valor inserido é do tipo FALSE');
+  } else {
+    console.log('O valor inserido é do tipo TRUE');
+  }
+}
+
+console.log(verificaTruthy(0));
+
+*/
+
+function verificaTruthy(valor) {
+  return !!valor;
+}
+
+var funcaoEmVariavel = verificaTruthy('Teste');
+console.log(funcaoEmVariavel);
+
+// Função p/ retornar o perimetro de um quadrado:
+
+function perimetroQuadrado(lado) {
+  return lado * 4;
+}
+
+console.log(perimetroQuadrado(2))
+
+// Função p/ retornar o nome completo (com nome e sobrenome como parametros):
+
+function mostraNome(nome, sobrenome) {
+  return `${nome} ${sobrenome}`;
+}
+
+console.log(mostraNome('Matheus', 'Borges'));
+
+// Função p/ retornar o tipo de dado do argumento passado nela (typeof):
+
+function tipoDado(dado) {
+  return typeof dado;
+}
+
+console.log(tipoDado('Texto'));
+console.log(tipoDado(1));
+console.log(tipoDado(-0));
+console.log(tipoDado(5e10));
+console.log(tipoDado(true));
+console.log(tipoDado(''));
+
+// Função p/ mostrar o nome completo no console quando o evento "scroll" ocorrer;
+
+function mostraNomeCompleto() {
+  var nomeCompleto = 'Matheus Borges';
+  console.log(nomeCompleto);
+}
+
+addEventListener('scroll', mostraNomeCompleto);
+
+// Função p/ verificar se o número é par;
+
+function isEven(numero) {
+  var modulo = numero % 2;
+  if (modulo === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+
