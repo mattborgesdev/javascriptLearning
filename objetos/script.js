@@ -65,3 +65,52 @@ var menu2 = {
 }
 
 menu2.metadeHeight(); // Testando isso no console o resultado vai ser 25. Seria 60 se não tivesse usado "this".
+
+// Construir objeto com os dados pessoais, possuindo pelo menos duas propriedades nome e sobrenome;
+
+var dadosPessoais = {
+  nome: ['Matheus', 'Sophia', 'Cleber'],
+  sobrenome: ['Rodrigues', 'Borges', 'Paula'],
+  mostrarNomeCompleto() {
+    return `Seu nome completo é ${this.nome[0]} ${this.sobrenome[1]}` // o Array do js é igual ao do Java no sentido de começar do 0;
+  },
+}
+
+console.log(dadosPessoais.mostrarNomeCompleto());
+
+/* OU ENTÃO:
+
+dadosPessoais.NomeCompleto = function () {
+  return `Seu nome completo é ${this.nome[1]} ${this.sobrenome[0]}`
+}
+
+console.log(dadosPessoais.NomeCompleto());
+
+*/
+
+console.log(dadosPessoais.nome[0]);
+console.log(dadosPessoais.sobrenome[1])
+console.log(`Seu nome completo é ${dadosPessoais.nome[0]} ${dadosPessoais.sobrenome[1]}`) // Aqui escreve-se muito mais!!
+
+
+/* Modificar o valor da propriedade preço para 3000:
+
+var carro = {
+  preco: 1000,
+  portas: 4,
+  marca: 'Audi',
+}
+
+*/
+
+var carro = {
+  preco: 1000,
+  portas: 4,
+  marca: 'Audi',
+}
+
+carro.preco = 3000;
+console.log(carro.preco);
+
+// Construir objeto de um cachorro que represente um labrador preto, com 10 anos, que late ao ver um homem;
+
