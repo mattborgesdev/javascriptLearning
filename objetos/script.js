@@ -5,7 +5,7 @@ var pessoa = {
   possuiFaculdade: false,
 }
 
-pessoa.npme;
+pessoa.nome;
 pessoa.idade;
 console.log(typeof pessoa);
 
@@ -114,3 +114,37 @@ console.log(carro.preco);
 
 // Construir objeto de um cachorro que represente um labrador preto, com 10 anos, que late ao ver um homem;
 
+var cachorro = {
+  raca: 'labrador',
+  cor: 'preto',
+  idade: 10,
+  latir(pessoa) {
+    if (pessoa === 'homem' || 'Homem' || 'HOMEM') {
+      return 'Latir';
+    } else {
+      return 'Nada';
+    }
+  }
+}
+
+// TUDO É OBJETO!!
+
+var altura = 1.67;
+var altura2 = 15060000;
+var expAlt = 1506e4;
+console.log(expAlt);
+
+// Mostrar no console 3 propriedades ou métodos de string:
+
+var testeString = 'Método de String';
+console.log(testeString.length);
+console.log(testeString.toUpperCase());
+console.log(testeString.charAt(10));
+
+// Nomear no console 5 propriedades ou métodos de elementos do DOM:
+
+var btn = document.querySelector('.btn');
+// btn.addEventListener.
+// btn.innerHTML
+// btn.getElementsByClassName
+// btn.id
