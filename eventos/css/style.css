@@ -3,6 +3,14 @@ body, h1, h2, h3, ul, li, p, dd, dt, dl {
   padding: 0px;
 }
 
+.azul {
+  background: teal;
+}
+
+html.textomaior {
+  font-size: 150%;
+}
+
 img {
   display: block;
   max-width: 100%;
